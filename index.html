@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>WeGuide · Maya's journey</title>
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/deck.css">
+<script type="importmap">{"imports":{"three":"./vendor/build/three.module.min.js","three/addons/":"./vendor/examples/jsm/"}}</script>
+</head>
+<body>
+<div id="backdrop"></div>
+<canvas id="stage"></canvas>
+<div id="veil"></div>
+<header id="top">
+  <img class="logo" src="assets/brand/weguide.svg" alt="weguide." id="home">
+  <nav id="chapters"></nav>
+  <button class="btn ghost" id="details" title="Details (D)">Details</button>
+</header>
+<div id="tags"></div>
+<div id="menu">
+  <button data-branch="counselor">Counselor view</button>
+  <button data-branch="academic">Academic approach</button>
+  <button data-branch="implementation">Implementation</button>
+  <button data-branch="commercial">Commercial details</button>
+</div>
+<main id="slide"></main>
+<footer id="bottom">
+  <span id="hint"></span>
+  <div id="nav">
+    <button class="btn ghost" id="back" hidden>Back to the story</button>
+    <button class="btn ghost" id="toTower" hidden>Back to the Tower</button>
+    <span id="count"></span>
+    <button class="btn ghost" id="prev" aria-label="Previous">←</button>
+    <button class="btn primary" id="next" aria-label="Next">→</button>
+  </div>
+</footer>
+<aside id="notes" hidden style="display:none"><span class="lbl"></span><p></p></aside>
+<div id="progress"></div>
+<div id="branch"><div class="panel"></div></div>
+<script type="module" src="js/deck.js"></script>
+</body>
+</html>
